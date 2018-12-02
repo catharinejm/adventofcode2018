@@ -20,6 +20,8 @@ default-extensions:
 - ImplicitParams
 - MultiParamTypeClasses
 - NamedFieldPuns
+- NoImplicitPrelude
+- OverloadedStrings
 - PartialTypeSignatures
 - RankNTypes
 - RecordWildCards
@@ -28,6 +30,7 @@ default-extensions:
 
 dependencies:
 - base >= 4.7 && < 5
+- containers
 - mtl
 - text
 

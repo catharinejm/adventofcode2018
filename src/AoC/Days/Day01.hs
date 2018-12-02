@@ -1,7 +1,6 @@
 module AoC.Days.Day01 where
 
-import Control.Monad.IO.Class
-
+import AoC.Prelude
 import AoC.Util
 
 day01 :: (MonadIO m) => m Int
