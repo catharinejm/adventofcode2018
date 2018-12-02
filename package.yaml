@@ -1,0 +1,37 @@
+name:                adventofcode2018
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/jondistad/adventofcode2018#readme
+license:             BSD3
+author:              Jon Distad
+maintainer:          jon.distad@gmail.com
+copyright:           2018 Jon Distad
+category:            Competition
+extra-source-files:
+- README.md
+default-extensions:
+- ConstraintKinds
+- ExistentialQuantification
+- FlexibleContexts
+- FlexibleInstances
+- GADTs
+- GeneralizedNewtypeDeriving
+- ImplicitParams
+- MultiParamTypeClasses
+- NamedFieldPuns
+- PartialTypeSignatures
+- RankNTypes
+- RecordWildCards
+- ScopedTypeVariables
+- ViewPatterns
+
+dependencies:
+- base >= 4.7 && < 5
+- mtl
+- text
+
+executables:
+  adventofcode2018:
+    source-dirs:      src
+    main:             Main.hs
