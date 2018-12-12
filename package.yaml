@@ -28,6 +28,7 @@ default-extensions:
 - RecordWildCards
 - ScopedTypeVariables
 - Strict
+- TemplateHaskell
 - ViewPatterns
 
 dependencies:
