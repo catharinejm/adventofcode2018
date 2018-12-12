@@ -15,6 +15,7 @@ default-extensions:
 - ExistentialQuantification
 - FlexibleContexts
 - FlexibleInstances
+- FunctionalDependencies
 - GADTs
 - GeneralizedNewtypeDeriving
 - ImplicitParams
@@ -26,11 +27,14 @@ default-extensions:
 - RankNTypes
 - RecordWildCards
 - ScopedTypeVariables
+- Strict
 - ViewPatterns
 
 dependencies:
 - base >= 4.7 && < 5
+- attoparsec
 - containers
+- lens
 - mtl
 - text
 
