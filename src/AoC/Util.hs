@@ -6,6 +6,7 @@ import           Control.Lens
 import           Control.Lens.TH
 import           Data.Attoparsec.Text
 
+import           AoC.Days.Types
 import           AoC.Prelude
 import qualified AoC.Prelude.Map as M
 import qualified AoC.Prelude.Text as T
@@ -26,15 +27,6 @@ frequencies = T.foldl' sumfreqs M.empty
     sumfreqs m c = M.alter bump c m
     bump (Just n) = Just (n+1)
     bump Nothing = Just 1
-
-data Square = Square { _squareNumber :: Int
-                     , _squareLeft   :: Int
-                     , _squareTop    :: Int
-                     , _squareWidth  :: Int
-                     , _squareHeight :: Int
-                     }
-  deriving (Eq, Ord, Show)
-makeFields ''Square
 
 parseSquare :: Parser Square
 parseSquare = Square <$  char '#'
