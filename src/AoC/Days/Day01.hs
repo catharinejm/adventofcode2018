@@ -3,16 +3,11 @@ module AoC.Days.Day01 where
 import           Control.Lens
 import           Control.Lens.TH
 
+import           AoC.Days.Types
 import           AoC.Prelude
 import qualified AoC.Prelude.Set as S
 import qualified AoC.Prelude.Text as T
 import           AoC.Util
-
-data Day01 = Day01 { _day01FilePath :: FilePath
-                   , _day01Deltas :: [Int]
-                   }
-  deriving (Show)
-makeFields ''Day01
 
 initDay01 :: (MonadIO m) => FilePath -> m Day01
 initDay01 path = Day01 path <$> (readLines path >>= return . map toint)
